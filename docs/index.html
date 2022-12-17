@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>finalv2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>finalv3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14620,7 +14620,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>All packages needed to this exploration are located in requirements.txt file. We can install them to our environment first.</p>
-<p>This notebook is written in Python3.9.12, with pip 21.2.4. Exact package version can be found in the requiremnts.txt file</p>
+<p>This notebook is written in Python3.9.12, with pip 21.2.4. Exact package version can be found in the requirements.txt file</p>
 
 </div>
 </div>
@@ -14677,8 +14677,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="What-are-our-columns?-What-data-type-should-they-be?">What are our columns? What data type should they be?<a class="anchor-link" href="#What-are-our-columns?-What-data-type-should-they-be?">&#182;</a></h5><p>This is the col description given by IBM: 
-AGE Numerical Value</p>
+<h5 id="What-are-our-columns?-What-data-type-should-they-be?">What are our columns? What data type should they be?<a class="anchor-link" href="#What-are-our-columns?-What-data-type-should-they-be?">&#182;</a></h5><p>This is the col description given by IBM:</p>
+<p>AGE Numerical Value</p>
 <p>ATTRITION   Employee leaving the company no, yes</p>
 <p>BUSINESS TRAVEL No Travel, Travel Frequently, Tavel Rarely</p>
 <p>DAILY RATE  Numerical Value - Salary Level</p>
@@ -15732,7 +15732,8 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Can-we-draw-any-cluster-information-using-pca-and-our-attrition-labels?">Can we draw any cluster information using pca and our attrition labels?<a class="anchor-link" href="#Can-we-draw-any-cluster-information-using-pca-and-our-attrition-labels?">&#182;</a></h3><p>Let's standard scale our data and use PCA to transform our data into two dimensions so view can view it visually</p>
+<h3 id="Can-we-draw-any-cluster-information-using-Principle-Component-Analysis-and-our-attrition-labels?">Can we draw any cluster information using Principle Component Analysis and our attrition labels?<a class="anchor-link" href="#Can-we-draw-any-cluster-information-using-Principle-Component-Analysis-and-our-attrition-labels?">&#182;</a></h3><p>We can use PCA to transform our data to 2 dimensions to view it on a graph. This can be done by first standardizing the data, then finding the eigenvectors and eigenvalues of the covariance matrix of the data. The eigenvectors with the highest eigenvalues will be the dimensions that best represent the variance in the data, and these can be used to transform the data to 2 dimensions.</p>
+<p>Let's standard scale our data and use PCA to transform our data into two dimensions so view can view it visually</p>
 <p>This won't given us a fully accurate visualization, each dimension has an explained variance value that is essentially how much of the data is explained in that dimension. Therefore in only two dimensions, only so much of the data can be explained and viewed in 2d.</p>
 <p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html">https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html</a>
 <a href="https://www.educba.com/scikit-learn-pca/">https://www.educba.com/scikit-learn-pca/</a></p>
@@ -15842,7 +15843,6 @@ class="
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Hypothesis-testing:">Hypothesis testing:<a class="anchor-link" href="#Hypothesis-testing:">&#182;</a></h2><p>What are the most impactful features on predicting employee attrition?</p>
 <p>What are the most effective classifiers on predicting employee attrition?</p>
-<p>Can we gain any insights from clustering?</p>
 
 </div>
 </div>
@@ -17785,6 +17785,17 @@ weighted avg       0.80      0.84      0.79       294
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Insights-from-our-new-data">Insights from our new data<a class="anchor-link" href="#Insights-from-our-new-data">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Would-making-our-DecisionTreeClassifier-log-loss-improve-our-true-positives?">Would making our DecisionTreeClassifier log loss improve our true positives?<a class="anchor-link" href="#Would-making-our-DecisionTreeClassifier-log-loss-improve-our-true-positives?">&#182;</a></h3><p>The log loss function is a measure of how well a model predicts the probability of an event, while improving the accuracy of a model by penalizing incorrect predictions.</p>
 <p><a href="https://www.analyticsvidhya.com/blog/2020/11/binary-cross-entropy-aka-log-loss-the-cost-function-used-in-logistic-regression/">https://www.analyticsvidhya.com/blog/2020/11/binary-cross-entropy-aka-log-loss-the-cost-function-used-in-logistic-regression/</a></p>
 
@@ -18539,7 +18550,7 @@ weighted avg       0.76      0.67      0.70       294
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Insights-from-these-varying-weights">Insights from these varying weights<a class="anchor-link" href="#Insights-from-these-varying-weights">&#182;</a></h3><p>Notice the variation in feature importance! As we apply higher weight for classifying the true positives, certain features rise in importance. Note these same features being much lower when the inverse weight is applied.</p>
+<h2 id="Conclusion:">Conclusion:<a class="anchor-link" href="#Conclusion:">&#182;</a></h2><h4 id="Insights-from-these-varying-weights">Insights from these varying weights<a class="anchor-link" href="#Insights-from-these-varying-weights">&#182;</a></h4><p>Notice the variation in feature importance! As we apply higher weight for classifying the true positives, certain features rise in importance. Note these same features being much lower when the inverse weight is applied.</p>
 <p>Very strange that JobLevel1 has very high prominence at certain weights. Rememeber that is the one hot encoded column signifying the lowest level of worker. Considering it is very high at the inverse .25 weight, a 0 for level1 worker may be a strong indicator that the employee will be staying. This seems to move in similar relation with JobInvolvement1, the lowest job involvment.</p>
 <p>(When weighted at 10000 weight, joblevel1 has much less importance for classifying these true positives)</p>
 <p>Interesting. While it is difficult to fully understand how this classifier is working, these feature importances add good insight.</p>
@@ -18555,20 +18566,33 @@ weighted avg       0.76      0.67      0.70       294
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>What are the most impactful features on predicting employee attrition?</p>
-<p>What are the most effective classifiers on predicting employee attrition?</p>
-<p>Can we gain any insights from clustering?</p>
+<h4 id="Answering-our-question-goals-from-earlier:">Answering our question goals from earlier:<a class="anchor-link" href="#Answering-our-question-goals-from-earlier:">&#182;</a></h4><h5 id="What-are-the-most-impactful-features-on-predicting-employee-attrition?">What are the most impactful features on predicting employee attrition?<a class="anchor-link" href="#What-are-the-most-impactful-features-on-predicting-employee-attrition?">&#182;</a></h5><p>According to the decision tree:</p>
+<p>Monthly Income
+Overtime
+Distance from home
+joblevel
+Age
+Education
+job role
+job satisfaction</p>
+<p>Using xgboost to try and isolate influence on positive:</p>
+<p>joblevel
+monthly income
+percent salary hike
+years at company
+age
+job involveemnt
+job role research scientist
+distance from home</p>
+<h5 id="What-are-the-most-effective-classifiers-on-predicting-employee-attrition?">What are the most effective classifiers on predicting employee attrition?<a class="anchor-link" href="#What-are-the-most-effective-classifiers-on-predicting-employee-attrition?">&#182;</a></h5><p>Original DecisionTree before removing many of the variables was the most accurate: 
+    accuracy 79%, recall of 86% (negative) 40% (positive)</p>
+<p>XGBoost provided some further insight into features experiementing with the weights, although demonstrated a lower accuracy of 77%, recall of 84% (negative) 38% positive</p>
+<p>Based on our results, it appears that the decision tree was the most accurate classifier before we removed many of the variables. However, when we made adjustments to the variables and weights of the xgboost classifier, its performance suffered, resulting in lower recall. These findings suggest that the decision tree may be a more reliable classifier in this context, at least when using the full set of variables. Further experimentation or analysis may be necessary to fully understand the relationship between the variables and the performance of the classifiers.</p>
+<p>If I had more time, the next steps would be to account for the imbalanced label distribution of our Attrition class. If the label distribution in your dataset is imbalanced, it may be difficult for the classifier to accurately predict the minority class, even if it performs well on the majority class. This is because the classifier may be more influenced by the majority class, and may not have enough examples of the minority class to accurately learn how to classify them.</p>
+<p>There are several approaches that can be taken to address imbalanced label distribution, such as oversampling the minority class, undersampling the majority class, or using class weights to give more importance to the minority class. It is worth considering whether imbalanced label distribution may have played a role in the results, and whether any adjustments or techniques could be used to improve the performance of the classifiers.</p>
+<h4 id="Closing">Closing<a class="anchor-link" href="#Closing">&#182;</a></h4><p>Based on the results of the decision tree model, it appears that this model can be used to predict whether employees are likely to stay or leave. This information can be useful for organizations looking to retain their top talent and identify potential areas of turnover. While the model may not be able to provide a definite prediction for every individual employee, it can give a decent general idea of which employees will stay and also which employees may be more likely to leave and may help inform targeted retention efforts (considering the lowest job level and job involvement in certain roles). It is important to note that the model's performance may vary depending on the specific context and the quality of the data used to train it.</p>
+<p><a href="https://machinelearningmastery.com/what-is-imbalanced-classification/">https://machinelearningmastery.com/what-is-imbalanced-classification/</a></p>
+<p><a href="https://deepai.org/publication/calibrating-label-distribution-for-class-imbalanced-barely-supervised-knee-segmentation">https://deepai.org/publication/calibrating-label-distribution-for-class-imbalanced-barely-supervised-knee-segmentation</a></p>
 
 </div>
 </div>
